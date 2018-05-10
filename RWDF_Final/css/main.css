@@ -166,7 +166,6 @@ main {
  */
 
 .hero {
-  /*float: left;*/
   background-image: url("../images/dog.jpg");
   background-size: cover;
   height: 300px;
@@ -194,8 +193,6 @@ main {
  */
 
 .top-news {
-  /*float: right;*/
-  /*height: 100%;*/
   border-bottom: 1px solid #E0E0E0;
   height: 300px;
   padding: 1em;
@@ -226,7 +223,6 @@ main {
 .top-news__item a {
   color: #666;
   text-decoration: none;
-  /*  padding: 1.5em;*/
 }
 
 .top-news__item a:hover,
@@ -242,8 +238,6 @@ main {
  */
 
 .scores {
-  /*width: 100%;
-  float: left;*/
   padding-top: 1em;
 }
 
@@ -291,8 +285,6 @@ main {
  */
 
 .weather {
-  /*float: right;
-  width: 100%;*/
   padding: 1em;
 }
 
