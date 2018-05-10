@@ -1,0 +1,205 @@
+/*
+ * Quiz: Project Update Part 2/3
+ * File: RWDF_L4_start
+ * Lesson 4: Common Responsive Patterns
+ * Objectives:
+ * TODO: 1. Pick a set of breakpoints and use one of the patterns that you
+ *       learned to style the page so that it works across different devices.
+ * TODO: 2. Test on multiple phones, tablets and browser window sizes
+ *       and adjust your breakpoints until you're happy.
+ */
+
+/*
+ * Quiz: Project Update Part 3/3
+ * File: RWDF_L5_Start
+ * Lesson 5: Optimizations
+ * TODO: 1. Update the sports score table with your favorite
+ *       sports team (make sure it's responsive!).
+ * TODO: 2. Double check your text. Is it too long? If so,
+ *       make it fit more naturally.
+ * TODO: 3. Add a minor breakpoint if possible.
+ * TODO: 4. Try replacing a few of the images with responsive
+ *       images. Check out the responsive images section of
+ *       Web Fundamentals using the link below.
+ * TODO: 5. Share your final project in the forums.
+ */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__menu {
+	display: none;
+}
+
+@media screen and (min-width: 450px) {
+	.weather {
+		margin: 0 auto;
+	}
+
+	.weather__today__temp,
+	.weather__today_deg {
+		font-size: 2.5em;
+	}
+
+	.weather__next__image {
+		height: 80%;
+		width: 80%;
+	}
+
+	.scores,
+	.weather,
+	.top-news {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 554px) {
+ 	.header__logo {
+ 		height: 48px;
+ 		margin-bottom: 1em;
+	}
+
+ 	.header__title {
+	  font-size: 2em;
+  	vertical-align: bottom;
+	}
+
+	.nav {
+		background-color: #fff;
+		position: absolute;
+		/* moves nav off the screen */
+		-webkit-transform: translate(-300px, 0);
+		transform: translate(-300px, 0);
+		/* animates in nicely */
+		transition: transform 0.3s ease;
+		width: 300px;
+		z-index: 20;
+	}
+
+	.nav.open {
+	  -webkit-transform: translate(0, 0);
+	 	transform: translate(0, 0);
+	}
+
+  .nav__item {
+    border-bottom: 1px solid #E0E0E0;
+    display: list-item;
+    text-align: left;
+    width: 100%;
+  }
+
+	.header__menu {
+  	display: inline-block;
+  	padding: 1em;
+  	position: absolute;
+  	right: 0;
+	}
+
+	.header__menu img {
+		height: 42px;
+		width: 42px;
+	}
+
+}
+
+@media screen and (min-width: 555px) {
+ 	.hero {
+ 		order: -1;
+ 		width: 60%;
+ 	}
+
+ 	.description h2 {
+		font-size: 1.3em;
+	}
+
+ 	.weather {
+ 		order: 0;
+ 		width: 40%;
+ 	}
+
+	.weather__today__image {
+ 		width: 50%;
+ 	}
+
+	.weather__today__temp,
+	.weather__today__deg {
+  	font-size: 1.6em;
+	}
+
+ 	.top-news {
+ 		order: 1;
+ 		width: 100%;
+ 	}
+
+ 	.scores {
+ 		order: 2;
+ 		width: 100%;
+ 	}
+
+ 	.recent-news {
+ 		order: 3;
+ 	}
+
+}
+
+@media screen and (min-width: 700px) {
+ 	.hero {
+ 		order: -1;
+ 		width: 50%;
+ 	}
+
+ 	.weather {
+ 		order: 0;
+ 		width: 50%;
+ 	}
+
+ 	.weather__today__temp,
+	.weather__today__deg {
+  	font-size: 3em;
+	}
+
+ 	.top-news {
+ 		order: 2;
+ 		width: 50%;
+ 	}
+
+ 	.scores {
+ 		order: 3;
+ 		width: 50%;
+ 	}
+
+ 	.post-summary {
+ 		display: grid;
+ 		grid-template-columns: repeat(2, 1fr);
+ 		grid-gap: 5%;
+ 	}
+
+}
+
+@media screen and (min-width: 850px) {
+ 	.header,
+ 	.nav,
+ 	main {
+		margin: 0 auto;
+		width: 850px;
+	}
+
+/* 	.weather {
+ 		width: 50%;
+ 		order: 2;
+ 	}
+
+ 	.top-news {
+ 		width: 50%;
+ 		order: 0;
+ 	}
+
+ 	.scores {
+ 		width: 50%;
+ 		order: 3;
+ 	}
+*/
+}
