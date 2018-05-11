@@ -1,0 +1,68 @@
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+
+body {
+	font-family: 'Tajawal', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	color: blue;
+	font-size: 4em;
+	font-weight: 900;
+	text-align: center;
+}
+
+article {
+	width: 50em;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 3em;
+	margin: 1.5em 0 0 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	/*width: 80vw;
+	height: 80vh;*/
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+figcaption {
+	color: blue;/*
+	font-size: 1.5em;
+	font-weight: 900;*/
+	text-align: center;
+}
+
+.smile {
+	display: inline;
+	width: 0.7em;
+	height: 0.7em;
+}
+
+.flourish {
+	max-width: 100%;
+	width: 50em;
+	margin: 0 auto;
+}
