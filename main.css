@@ -84,11 +84,10 @@ footer {
 	text-align: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
 	.cards {
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: column;
 	}
 
@@ -100,6 +99,35 @@ footer {
 
 	.box {
 		height: 150px;
+	}
+
+	footer {
+		font-size: 0.8em;
+	}
+
+}
+
+@media screen and (max-width: 799px) {
+
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 2em;
+	}
+
+	.card {
+		flex: 0 1 calc(50% - 1em);
+		margin: 1.5em auto;
+		max-width: 90%;
+	}
+
+	.box {
+		height: 150px;
+	}
+
+	footer {
+		font-size: 0.8em;
 	}
 
 }
