@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="description" content="Dawn Woodson's Udacity Projects for Mobile Web Specialist" />
+  <meta name="author" content="Dawn Woodson">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta itemprop="name" content="Dawn Woodson's Udacity Projects for Mobile Web Specialist">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
 	<title>Dawn Woodson's World</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Muli" rel="stylesheet">
 </head>
+
 <body>
-	<nav>
-		<ul>
-			<li><a href="https://dawnwoodson.github.io/RWDF_Final/index.html">The Brighton Times</a></li>
-			<li><a href="https://dawnwoodson.github.io/ProjectPart1/index.html">My Responsive Blog</a></li>
-		</ul>
-	</nav>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="https://dawnwoodson.github.io/RWDF_Final/index.html">The Brighton Times</a></li>
+				<li><a href="https://dawnwoodson.github.io/ProjectPart1/index.html">My Responsive Blog</a></li>
+			</ul>
+		</nav>
+
+		<h1>Dawn Woodson's Udacity Projects for Mobile Web Specialist</h1>
+
+		<picture>
+      <source media="(min-width: 750px)" srcset="images/adventure-boardwalk-large_2x.jpg 2x, images/adventure-boardwalk-large_1x.jpg 1x">
+      <source media="(min-width: 500px)" srcset="images/adventure-boardwalk-medium.jpg">
+      <img src="images/adventure-boardwalk-small.jpg" alt="A beautiful adventure through the woods on a boardwalk.">
+	  </picture>
+
+	</header>
+
+	<section class="cards">
+		<article class="card">
+			<h2>The Brighton Times</h2>
+	    <img src="images/brighton-times-small.jpg" alt="The Brighton Times">
+		  <p class="description">This is the first project I had to turn into a responsive website. I learned how to use media queries and how to change the order of the different sections based on the width of device. Also, I learned how to create a fly-out menu, which I absolutely love.</p>
+		  <p><a href="https://dawnwoodson.github.io/RWDF_Final/index.html">See the site now.</a></p>
+
+		</article>
+
+		<article class="card">
+			<h2>My Responsive Blog</h2>
+      <img src="images/responsive-blog-small.jpg" alt="My Responsive Blog">
+		  <p class="description">This project required me to learn grunt to make the images responsive. Also, I learned about unicodes and how to use them instead of images whenever possible. </p>
+		  <p><a href="https://dawnwoodson.github.io/ProjectPart1/index.html">See the site now.</a></p>
+		</article>
+
+		<article class="card">
+			<h2>Future Project</h2>
+			<div class="box">The Future is Bright</div>
+      <!-- <img src="images/responsive-blog-small.jpg" alt="My Responsive Blog"> -->
+		  <p class="description">Looking forward to the next project. Or maybe I'll design my own. Who knows!</p>
+		</article>
+
+		<article class="card">
+			<h2>Future Project</h2>
+			<div class="box">The Future is Bright</div>
+      <!-- <img src="images/responsive-blog-small.jpg" alt="My Responsive Blog"> -->
+		  <p class="description">Looking forward to the next project. Or maybe I'll design my own. Who knows!</p>
+		</article>
+	</section>
+
+	<footer>
+		<p>&copy 2018 Dawn Woodson. All rights reserved.</p>
+	</footer>
 </body>
 </html>
