@@ -76,13 +76,10 @@ p, .social {
 /* zocial */
 [class*="zocial-"]:before {
 	color: #154360;
-  font-family: 'zocial', sans-serif;
+  	font-family: 'zocial', sans-serif;
 	display: inline-block; padding-right: 10px;
 	text-shadow: 3px 3px 3px #aaa;
-	/*width: 1.4em;*/
 }
-
-
 
 .social {
 	border-bottom: 1px solid #aaa;
@@ -98,7 +95,7 @@ p, .social {
 	text-decoration: none;
 }
 
-a#viewSource {
+a#viewSource, a {
 	color: #5499C7;
 	font-weight: bold;
 	text-decoration: none;
