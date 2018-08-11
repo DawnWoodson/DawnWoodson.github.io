@@ -38,6 +38,17 @@ h2 {
 	margin-top: 1.5em;
 }
 
+a {
+	color: #5499C7;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover {
+	color: black;
+}
+
 article, footer {
 	align-items: center;
 	display: flex;
@@ -93,15 +104,4 @@ p, .social {
 	color: #5499C7;
 	margin-right: 2em;
 	text-decoration: none;
-}
-
-a {
-	color: #5499C7;
-	font-weight: bold;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-a:hover {
-	color: black;
 }
